@@ -1,38 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Diretrizes do desafio
+===========================
 
-## Getting Started
+O objetivo principal desse teste é avaliar sua capacidade de escrever código limpo, bem testado e reutilizável. Ao terminar, faça o deploy da aplicação e mande-nos o link.
 
-First, run the development server:
+Tarefa (funcional)
+---------------
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Para esse desafio, você deve consumir nossa [API REST de produtos](https://mks-frontend-challenge-api.herokuapp.com/api-docs/) para exibir a lista de produtos da loja.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação deve conter apenas uma página/rota e um carrinho.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- <b>Loja</b>: A lista de produtos deve ser buscada de nossa API, use um shimmer/skeleton enquanto estiver em loading.
+ 
+- <b>Carrinho</b>: O carrinho deve conter todos os produtos selecionados, juntamente com a opção de aumentar a quantidade de cada produto selecionado.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Use do Jest e a testing-library para realizar os testes unitários.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Recursos
+---------------
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+UI/UX: [Figma loja](https://www.figma.com/file/Z4z8osDbK1ET7cjNzFRMrK/MKS-Front-end-challenge?node-id=0%3A1) PS: O design system está incluso, incluindo a fonte.
 
-## Learn More
+API: [API REST de produtos](https://mks-frontend-challenge-api.herokuapp.com/api-docs/) para exibir a lista de produtos da loja.
 
-To learn more about Next.js, take a look at the following resources:
+Ferramentas requeridas
+---------------
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. TypeScript
+2. React ou Next.js (Preferimos Next.js)
+3. Redux toolkit
+4. Styled-components
+5. Jest
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Aspectos técnicos
+---------------
 
-## Deploy on Vercel
+Todas as ferramentas listadas anteriormente são mandatórias, além delas sinta-se livre para utilizar de qualquer outra technologia que te seja confortável.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Faça o deploy!
+---------------
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ao finalizar, faça o deploy no lugar que te for confortável (exemplo: Vercel, Netlify, Heroku, Amazon EC2, etc)
